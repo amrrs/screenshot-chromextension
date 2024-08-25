@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Screenshot Enhancer",
+    "version": "1.0",
+    "description": "Capture and enhance screenshots",
+    "permissions": [
+        "activeTab",
+        "<all_urls>",
+        "tabs"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "content_security_policy": "script-src 'self'; object-src 'self'"
+}

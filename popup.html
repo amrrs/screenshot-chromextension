@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 300px; padding: 10px; }
+    #capturedImage { max-width: 100%; }
+    .control { margin: 10px 0; }
+  </style>
+</head>
+<body>
+  <button id="captureBtn">Capture Screenshot</button>
+  <div id="editor" style="display:none;">
+    <img id="capturedImage">
+    <div class="control">
+      <label>Background Type:</label>
+      <select id="bgType">
+        <option value="solid">Solid Color</option>
+        <option value="gradient">Gradient</option>
+      </select>
+    </div>
+    <div id="solidColorControl" class="control">
+      <label for="bgColor">Solid Color:</label>
+      <input type="color" id="bgColor">
+    </div>
+    <div id="gradientControl" class="control" style="display:none;">
+      <label for="gradientSelect">Gradient:</label>
+      <select id="gradientSelect">
+        <option value="blue-purple">Blue to Purple</option>
+        <option value="green-blue">Green to Blue</option>
+        <option value="orange-pink">Orange to Pink</option>
+        <option value="custom">Custom Gradient</option>
+      </select>
+    </div>
+    <div id="customGradientControl" class="control" style="display:none;">
+      <label for="gradientColor1">Color 1:</label>
+      <input type="color" id="gradientColor1">
+      <label for="gradientColor2">Color 2:</label>
+      <input type="color" id="gradientColor2">
+    </div>
+    <div class="control">
+      <label for="padding">Padding:</label>
+      <input type="range" id="padding" min="0" max="50" value="0">
+    </div>
+    <button id="saveBtn">Save Image</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
