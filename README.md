@@ -3,7 +3,7 @@
 ![image](https://github.com/user-attachments/assets/7f95f4b1-a5f8-45ce-870b-5a16c3efc32b)
 
 
-To run this extension locally:
+### To run this extension locally:
 
 Create a new directory for your extension.
 
@@ -16,7 +16,7 @@ Enable "Developer mode" in the top right corner.
 Click "Load unpacked" and select your extension directory.
 
 
-This basic extension will:
+### This basic extension will:
 
 Capture a screenshot of the current tab when you click the "Capture Screenshot" button.
 
